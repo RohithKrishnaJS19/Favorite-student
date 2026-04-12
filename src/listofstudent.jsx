@@ -52,7 +52,7 @@ function Listofstudent({ favorite, setfavorite }) {
                         })
                             return <div className="flex justify-between items-center">
                                
-                                    <h1 className="text-xl p-3">{index + 1}. {item.name}</h1>
+                                    <h1 className="text-xl p-3 pl-4">{index + 1}. {item.name}</h1>
                                 
                                     <button disabled={isAdd} onClick={() => { Add(item.id) }} className="rounded bg-blue-600 text-white  p-2 mx-5 my-4">★ Add to Favorite</button>
                                

@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 function Header() {
     const location = useLocation()
     return (
-        <div className="bg-white flex gap-14 p-4">
+        <div className="bg-white flex gap-14 p-3">
                 <Link to="/"><h1 className={`text-lg ${location.pathname === "/"? 
                 "border-b-2 border-blue-600"
                             : ""}`}>List of Students</h1></Link>

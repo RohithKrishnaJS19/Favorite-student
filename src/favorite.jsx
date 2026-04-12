@@ -24,13 +24,13 @@ function Favorite(props) {
     return (
         <div className="flex flex-col items-center mt-20">
             <Header />
-            <div className="my-5 shadow-[0_0_10px_5px_rgba(0,0,0,0.1)] w-95">
+            <div className="my-5 shadow-[0_0_10px_5px_rgba(0,0,0,0.1)] w-94">
                 {suggest ? <h1 className="text-xl p-3">No Favorite Students Added yet</h1> : ""}
                     {
-                        props.favorite.map(function (item) {
+                        props.favorite.map(function (item,index) {
                             return <div className="flex justify-between items-center">
                 
-                                    <h1 className="text-xl p-3">{item.name}</h1>
+                                    <h1 className="text-xl p-3 pl-4">{index+1}. {item.name}</h1>
                         
                                     <button onClick={() => { remove(item.id) }}  className="rounded bg-red-500 text-white  p-2 mx-7 my-4">🗑 Remove</button>
                              
