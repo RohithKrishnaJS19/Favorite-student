@@ -33,8 +33,21 @@ function Listofstudent({ favorite, setfavorite }) {
         })
         setfavorite([...favorite, temp])
     }
+    const [einput,seteinput]=useState()
+    function input(event)
+    {
+        seteinput(event.target.value)
+    }
+
+    function add()
+    {
+        setname([...name,{id:name.length+1,name:einput}])
+    }
     return (
         <div className="flex flex-col items-center mt-20">
+            <div>
+                <input className="border p-2" onChange={input}></input><button onClick={add} className="bg-black text-white p-2 border border-black">Add</button>
+            </div>
             <Header />
             <div className="my-5 shadow-[0_0_10px_5px_rgba(0,0,0,0.1)] w-94">
                     {
