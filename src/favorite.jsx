@@ -22,7 +22,7 @@ function Favorite(props) {
     }
 
     return (
-        <div className="flex flex-col items-center mt-20">
+        <div className="flex flex-col items-center mt-30">
             <Header />
             <div className="my-5 shadow-[0_0_10px_5px_rgba(0,0,0,0.1)] w-94">
                 {suggest ? <h1 className="text-xl p-3">No Favorite Students Added yet</h1> : ""}
